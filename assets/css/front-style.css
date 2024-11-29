@@ -1,0 +1,539 @@
+/* General */
+.content-area {
+    overflow: auto;
+    background-image: url('../../images/site/body-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: calc(100vh - 75px);
+    height: auto;
+}
+
+.page-title {
+    font-family: Arial;
+    color: black;
+}
+
+/* about us page */
+.box {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* single song view page */
+.song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.song .btn {
+    font-size: 40px;
+}
+.song .btn,
+.song .btn:hover,
+.song .btn:focus,
+.song .btn:active {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.song-description {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+}
+.animate-audio {
+    -moz-animation: audio1 1.5s infinite ease-in-out;
+    -o-animation: audio1 1.5s infinite ease-in-out;
+    -webkit-animation: audio1 1.5s infinite ease-in-out;
+    animation: audio1 1.5s infinite ease-in-out;
+}
+
+@keyframes audio1 {
+    0%,
+    100% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 6.4px rgba(255, 255, 255, 0.4);
+    }
+    25% {
+        transform: scale(1.4);
+        box-shadow: 0 0 0 2.4px rgba(255, 255, 255, 0.15);
+    }
+    50% {
+        transform: scale(1.6);
+        box-shadow: 0 0 0 8.8px rgba(255, 255, 255, 0.55);
+    }
+    75% {
+        transform: scale(1.8);
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
+    }
+}
+
+.review-box {
+    background-color: #e2ddb7;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.review-box .reviews {
+    max-height: 60vh;
+    overflow: auto;
+}
+
+.review-box .song-review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.song-review img,
+.song-review h5,
+.song-review p {
+    margin-bottom: 0px;
+    margin-right: 5px;
+    color: grey;
+}
+
+.song-review h5 {
+    color: #000;
+    font-size: 17px;
+}
+
+.review-box .review-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.review-form {
+    border: 1px #000;
+    padding: 0px 10px;
+}
+
+.review-form .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    padding-left: 10px;
+}
+
+.review-form .form-control::placeholder {
+    color: #111010;
+}
+
+.review-form i {
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+    transform: rotate(65deg);
+}
+
+.fav-music-card {
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+}
+
+.fav-music-card img {
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.fav-music-card .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fav-music-card .btn {
+    margin-bottom: 10px;
+}
+/* pre login pages*/
+.login-required {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Checkout */
+.form-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+/* profile */
+.form-img {
+    width: 70px;
+    height: 70px;
+}
+
+/* old */
+/*login style*/
+.background {
+    background-image: url('../images/12.jpg');
+    background-repeat: no-repeat;
+    background: 100% auto;
+}
+
+.wrapper {
+    width: 500px;
+    height: 600px;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    padding: 150px 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000000;
+    font-size: 15px;
+}
+.heading1 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: Showcard Gothic;
+    margin-top: -12px;
+    color: #000000;
+}
+.wrapper input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.wrapper input[type='text'],
+.wrapper input[type='password'] {
+    border: none;
+    border-bottom: 1px #000000;
+    background: transparent;
+    height: 45px;
+    font-size: 18px;
+    opacity: 1;
+    color: #000000;
+    font-weight: bold;
+}
+.wrapper input[type='submit'] {
+    border: none;
+    outline: none;
+    height: 30px;
+    font-weight: bold;
+}
+.wrapper a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.wrapper a:hover {
+    color: #641e16;
+    opacity: 1;
+}
+.bottom-text input {
+    width: 5%;
+    float: left;
+    font-size: 10px;
+}
+.bottom-text a {
+    float: right;
+}
+/*signup style*/
+.body {
+    background-image: url('../images/12.jpg');
+    background-repeat: no-repeat;
+    background: 100px auto;
+}
+.wrapper2 {
+    width: 500px;
+    height: 700px;
+    color: #000000;
+    top: 55%;
+    left: 50%;
+    padding: 150px 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000000;
+    font-size: 15px;
+}
+.heading2 {
+    margin: 0px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: Showcard Gothic;
+    color: #000000;
+}
+.wrapper2 input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.wrapper2 input[type='text'],
+.wrapper2 input[type='password'] {
+    border: none;
+    border-bottom: 1px #fff;
+    background: transparent;
+    height: 45px;
+    font-size: 18px;
+    opacity: 1;
+    color: #000000;
+    font-weight: bold;
+}
+.wrapper2 input[type='submit'] {
+    border: none;
+    outline: none;
+    height: 30px;
+    font-weight: bold;
+}
+/*home page style*/
+.image {
+    width: 100px;
+    height: auto;
+}
+
+.color {
+    font-family: Showcard Gothic;
+    color: #000000;
+}
+.link {
+    padding-left: 0px;
+    margin-left: 50px;
+}
+/*.card-text{
+	height: 100px;
+	overflow: auto;
+	margin-bottom: 40px;
+}*/
+.card-options {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-img-top {
+    width: 100%;
+    height: 250px;
+}
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.dummy-heading {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    color: #fff;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*checkout style*/
+label {
+    color: black;
+    font-weight: bold;
+}
+/*contactus style*/
+input[type='text'],
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type='email'] {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+input[type='submit'] {
+    background-color: #ffff;
+}
+/*aboutus style*/
+
+.paragraph {
+    font-weight: bold;
+}
+
+/*music review*/
+
+.cart-button {
+    background: #fe980f;
+    color: #ffffff;
+    font-size: 15px;
+}
+.abc {
+    width: 130%;
+    height: 60%;
+}
+.heading {
+    font-family: Showcard Gothic;
+}
+.free-music {
+    height: 16.52vh;
+}
+.review-section-inner {
+    background-color: #fff;
+    padding: 20px;
+}
+.review-form .row {
+    display: flex;
+    justify-content: center;
+}
+.review-button {
+    display: flex;
+    justify-content: space-between;
+}
+.media-img img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+.media-img {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.review-button-section {
+    display: flex;
+}
+/*cart page*/
+.button-cart {
+    height: 10%;
+    width: %;
+}
+.purchase-details {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+}
+.details-item-left {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+.details-item-center {
+    flex: 2;
+}
+.details-item-right {
+    flex: 1;
+}
+.img-fluid {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.checkout-summary-rows {
+    margin-bottom: 15px;
+}
+.checkout-order-total {
+    width: 100%;
+}
+.checkout-order-total-row {
+    margin-bottom: 16px;
+}
+.order-summary {
+    background-color: #fff;
+    padding: 30px 20px;
+}
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.order-summary .checkout-order-total button {
+    width: 100%;
+}
+.cart-checkbox {
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+/*profile*/
+.account-dropdown .dropdown-menu {
+    padding: 0;
+    width: 260px;
+    left: -170px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    height: 260px;
+}
+
+.account-dropdown .dropdown-menu > .profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #e8eaed;
+}
+
+.account-dropdown .dropdown-menu h6 {
+    margin-bottom: 0;
+    color: #000;
+    font-weight: 500;
+}
+
+.account-dropdown .dropdown-menu .email-address {
+    color: #5f6368;
+    font-weight: 500;
+}
+.account-dropdown img {
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    margin-bottom: 10px;
+}
+
+.account-dropdown .dropdown-menu .account-dropdown-nav {
+    padding: 0;
+    list-style-type: none;
+}
+
+.account-dropdown .dropdown-menu .account-dropdown-nav a {
+    color: #000;
+    display: block;
+    font-weight: 400;
+    padding: 7px 15px 7px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid #e8eaed;
+}
+.profile-button {
+    display: flex;
+    justify-content: center;
+}
+/*favourite music*/
+.img-fav {
+    width: 100%;
+    height: 100%;
+}
+
+.fa-menu {
+    position: relative;
+    top: 2px;
+}

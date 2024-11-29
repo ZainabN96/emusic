@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------------------------
+logos specific code
+--------------------------------------------------------------------------------*/
+.navbar-vertical-collapsed .nav-logo {
+    display: none !important;
+    padding-bottom: 20px !important;
+}
+
+.navbar-vertical-collapsed .menu-logo {
+    display: block !important;
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+}
+
+/*--------------------------------------------------------------------------------
+song preview page code
+--------------------------------------------------------------------------------*/
+.music-cover-img {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.music-data {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.music-file {
+    width: 50%;
+    flex: 1;
+}
+
+.music-review {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+}
+
+.review-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.music-review p {
+    flex: 1;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+/*--------------------------------------------------------------------------------
+forms image code
+--------------------------------------------------------------------------------*/
+
+.form-img {
+    width: 100px;
+    height: 100px;
+}
+
+/*--------------------------------------------------------------------------------
+user image in menu code
+--------------------------------------------------------------------------------*/
+.menu-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px inset;
+    margin-right: 10px;
+}
+
